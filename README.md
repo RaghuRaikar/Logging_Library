@@ -10,13 +10,6 @@ A python program that can be run on files to search for personal information and
  - Log has been scrubbed for the most part but needs to be double checked to be certain.
  - Run a script that makes sure the log files have no sort of personal information.
 
-## How The Program Works
-
- - Uses python regular expressions library in order to be able to identify personal information.
- - Parses file in search of personal information and replaces it with word “<REDACTED'>”.
- - Sends an email out to the Amazon Returns team letting them know that personal information was found and thus the current data in the log file could have been subject to a data breach.
- - Includes the order IDs of the specific orders that contained personal information in case the team wants to go back and identify all the customer’s personal information that was at risk.
-
 ## Personal Information Being Searched For
 
  - First and Last Name
@@ -24,6 +17,14 @@ A python program that can be run on files to search for personal information and
  - Phone Number
  - Email
  - Social Security
+
+## How The Program Works
+
+ - Uses python regular expressions library in order to be able to identify personal information.
+ - Parses file in search of personal information and replaces it with word “<REDACTED'>”.
+ - Sends an email out to the Amazon Returns team letting them know that personal information was found and thus the current data in the log file could have been subject to a data breach.
+ - Includes the order IDs of the specific orders that contained personal information in case the team wants to go back and identify all the customer’s personal information that was at risk.
+
 
 ## Email Layout
 
