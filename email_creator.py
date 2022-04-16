@@ -24,7 +24,10 @@ def parse_file():
             contains_phone_number(each_line)
             contains_email(each_line)
             contains_social_security(each_line)
+        '''
         if len(name_list) > 0 or len(address_list) > 0 or len(phone_number_list) > 0 or len(email_list) > 0 or len(social_security_list) > 0:
+        '''
+        if pi == True:
             EMAIL_TEMPLATE = "Dear Amazon Returns Team,\n\
             This email is being sent out in order to notify you that personal information was found,\n\
             and thus might have been subject to a data breach.\n\
